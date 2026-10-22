@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="Heaven Aura"
+description='''
+Сабмод для Timeless Power: поки Made in Heaven у руці, ти і всі неворожі істоти навколо отримують силу, стійкість і регенерацію.
+'''
+displayTest="IGNORE_SERVER_VERSION"
+
+[[dependencies.${mod_id}]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="timelesspower"
+mandatory=true
+versionRange="[3.0,)"
+ordering="AFTER"
+side="BOTH"
